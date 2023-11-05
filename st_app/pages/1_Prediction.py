@@ -25,17 +25,18 @@ age=st.number_input(label="Age",
                     value=18,
                     min_value=18,
                     max_value=120)
-st.write(f"Sua idade é  { age}")
+st.write(f"Your have { age} years old")
 
 bmi=st.number_input ( label= "BMI",
                      min_value=12.0,
-                    max_value=50.0)
-st.write(f"Seu indice de massa corporal  é  { bmi:.2f}")
+                    max_value=50.0,
+                    step=0.1)
+st.write(f"Your Body Mass Index is: { bmi:.2f}")
 
 children=st.slider(label="Children", 
                          min_value=0,
                          max_value=10)
-st.write(f"Voce tem  { children} filhos")
+st.write(f"You have: { children} children")
 
 smoker=st.selectbox(label="Smoker", options=["no", "yes"])
 
