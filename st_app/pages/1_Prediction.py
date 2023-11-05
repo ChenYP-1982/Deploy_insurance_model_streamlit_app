@@ -39,7 +39,7 @@ st.write(f"Voce tem  { children} filhos")
 
 smoker=st.selectbox(label="Smoker", options=["no", "yes"])
 
-with open('../models/model.pkl', 'rb') as model_file:
+with open('models/model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 def prediction():
