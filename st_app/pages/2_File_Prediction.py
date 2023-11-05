@@ -14,7 +14,7 @@ st.write ("# :blue[_Insurance prediction_]")
 
 #-------Model-------#
 
-with open('../models/model.pkl', 'rb') as model_file:
+with open('models/model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 #---File uplpader---#
@@ -29,7 +29,7 @@ try:
     st.write(df_output)
 except:
     #preventing showing error at streamlit app
-    st.error("Please make sure that already upload your file")
+    st.error("Please make sure that you have already uploaded your file")
     st.stop()
 
 st.download_button(label= "Download file CSV", data=df_output.to_csv(index=False).encode("utf-8"),
