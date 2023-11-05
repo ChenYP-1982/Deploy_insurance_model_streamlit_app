@@ -21,7 +21,7 @@ st.write("\n\n")
 
 
 
-st.image("../img/health_insurance_img.jpg")
+st.image("img/health_insurance_img.jpg")
 
 
 
