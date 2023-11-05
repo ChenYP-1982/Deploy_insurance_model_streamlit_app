@@ -46,7 +46,7 @@ This App aims to predict the insurance cost using the following features:
    '''
 )
 
-st.success("Please **got to next pages** to get prediction ")
+st.success("Please **go to next pages** to get the predictions ")
 
 
 
