@@ -56,7 +56,7 @@ def prediction():
 if st.button("Predict"):
     try:
         insurance_cost=prediction() 
-        st.success(f"Your insurance cost will be {insurance_cost:.2f}")
+        st.success(f"Your insurance cost will be  USD {insurance_cost:.2f}")
     except Exception as error:
         st.error(f"Error in predicting the cost of insurance.{error}")
 
